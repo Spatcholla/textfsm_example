@@ -1,0 +1,12 @@
+Value Probing (((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?) <----> ((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?))
+Value Size (\w*)
+Value Max (\w*)
+Value Avg (\w*)
+Value Status (\w*)
+
+Start
+  ^probing\s${Probing}
+  ^\s*TDI Server\s${Status}
+  ^Test Size\s${Size}
+  ^\s*Maximal Throughput \(MBit/s\):\s${Max}
+  ^\s*Average Throughput \(MBit/s\):\s${Avg} -> Record
